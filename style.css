@@ -64,7 +64,7 @@ h4 ~ p {
 /* Selector de atributo */
 
 input[type] { /* la propiedad type este presente */
-    display: block;
+    /* display: block; */
     margin: 5px 0;
 }
 
@@ -124,3 +124,54 @@ padding: 10px 20px 15px; t rl b
 padding: 10px 10px 20px 10px; t r b l  
 
 */
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+label {
+    color: blue;
+    text-transform: uppercase;
+}
+
+input[type=radio]:checked {
+    border: 10px solid red !important;
+    background-color: red !important;
+}
+
+
+input[type=text]:focus {
+    background-color: gray;
+}
+
+.saludo::before {
+    content: 'Bienvenidos';
+    color: #cccccc;
+}
+
+.saludo::after {
+    content: 'a su curso de FullStack';
+}
+
+.search::placeholder {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: #999999;
+}
+
+p::first-letter {
+    color: red;
+    text-transform: capitalize;
+} 
+
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+    body {
+        background-color: green;
+    }
+}
