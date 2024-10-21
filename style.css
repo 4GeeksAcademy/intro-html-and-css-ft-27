@@ -1,0 +1,126 @@
+/* 
+
+selector {
+    propiedad: valor;
+}
+
+*/
+
+/* Importar CSS */
+@import url('home.css');
+
+/* Selector de ID */
+
+#home {
+    width: 100%;
+    font-size: 20px;
+    color: red;
+}
+
+/* Selector de Clase */
+
+.fa-html5 {
+    font-size: 20px;
+    color: green;
+}
+
+.titulo {
+    color: blue;
+    font-size: 14px;
+}
+
+/* Selector de Etiqueta o Tag*/
+
+p {
+    font-size: 20px;
+}
+
+
+/* Selector Descendiente */
+
+div span {
+    display: block;
+}
+
+/* Selector Hijo */
+
+div > span {
+    display: inline;
+}
+
+/* Selector Adyacente */
+
+h3 + p {
+    font-size: 12px;
+    text-align: justify;
+    padding: 2px;
+}
+/* Selector Hermano */
+
+h4 ~ p {
+    color: red;
+}
+
+/* Selector de atributo */
+
+input[type] { /* la propiedad type este presente */
+    display: block;
+    margin: 5px 0;
+}
+
+input[type=text] { /* la propiedad type debe ser igual a text */
+    color: red;
+}
+
+input[type=email]{ /* la propiedad type debe ser igual a email */
+    color: green;
+}
+
+a[class=link3]{
+    color: brown;
+}
+
+a[class~=link3]{
+    color: blueviolet;
+}
+
+a[href*=google]{
+    color: cornflowerblue;
+    font-size: 14px;
+}
+
+a[href^=https]{
+    color: goldenrod;
+    font-size: 14px;
+}
+
+a[href$=".html"]{
+    color: burlywood;
+    font-size: 24px;
+}
+
+/* 
+
+margin
+margin-top
+margin-left
+margin-right
+margin-bottom
+
+margin: 10px; trbl
+margin: 10px 20px; tb rl
+margin: 10px 20px 15px; t rl b
+margin: 10px 10px 20px 10px; t r b l 
+
+padding
+padding-top
+padding-left
+padding-right
+padding-bottom
+
+padding: 10px; trbl
+padding: 10px 20px; tb rl
+padding: 10px 20px 15px; t rl b
+padding: 10px 10px 20px 10px; t r b l  
+
+*/
